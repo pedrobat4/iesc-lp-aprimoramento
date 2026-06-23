@@ -35,6 +35,8 @@ export type Curso = {
   imagem: string;
   destaque?: boolean;
   tag?: string;
+  /** Classe Tailwind de object-position p/ enquadrar a foto (ex.: "object-top"). */
+  pos?: string;
 };
 
 export const cursos: Curso[] = [
@@ -69,7 +71,8 @@ export const cursos: Curso[] = [
     tag: "Profissionalizante",
     descricao:
       "Entre no crescente mercado pet auxiliando no cuidado e na saúde dos animais.",
-    imagem: "/img/afericao-pressao.jpg",
+    imagem: "/img/estudante-veterinaria.jpg",
+    pos: "object-top",
   },
 ];
 
